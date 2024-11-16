@@ -4,10 +4,12 @@ import type { Config } from 'tailwindcss';
 
 export default {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
-
 	theme: {
-		extend: {}
+		extend: {
+			fontFamily: {
+				inter: ['Inter', 'sans-serif']
+			}
+		}
 	},
-
 	plugins: [typography, containerQueries]
 } satisfies Config;

@@ -1,6 +1,9 @@
 <script lang="ts">
 	import '../app.css';
-	let { children } = $props();
 </script>
 
-{@render children()}
+<div class="min-h-screen bg-white font-inter antialiased">
+	<main class="mx-auto max-w-4xl pt-44">
+		<slot />
+	</main>
+</div>
