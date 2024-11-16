@@ -38,15 +38,15 @@
 	});
 </script>
 
-<div class="p-8">
-	<h1 class="animate-text text-3xl font-semibold">Welcome to Kriyavat Labs</h1>
-	<p class="animate-text mt-10 text-4xl font-semibold leading-relaxed text-neutral-400">
+<div class="p-8 text-black">
+	<h1 class="animate-text text-3xl font-medium">Welcome to Kriyāvat Labs</h1>
+	<p class="animate-text mt-10 text-4xl font-medium leading-relaxed">
 		We are just team of tech bros who are tired of “building the next thing” and “disrupting the
 		industry” yapping. Just pure - unadulterated love for building stuff and code. We build and ship
 		projects, because, well, that's what we love. No startup ambitions. Just solid side projects.
 	</p>
-	<p class="animate-text mt-10 text-4xl font-semibold leading-relaxed text-neutral-400">
-		Why? We are just starting out now, cooking up our first project. So why Kriyavat Labs?
+	<p class="animate-text mt-10 text-4xl font-medium leading-relaxed">
+		Why? We are just starting out now, cooking up our first project. So why Kriyāvat Labs?
 		<br /> Simple - we want a place to showcase our projects and space where we build things we find
 		interesting and share them with others who might find them useful.
 		<br />
