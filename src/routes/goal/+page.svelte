@@ -1,5 +1,5 @@
 <div>
-	<p class="font-semibold">Why Kriyāvat Labs?</p>
+	<p class="font-semibold">Goals</p>
 
 	<div class="">
 		<div class="mt-8">

@@ -1,5 +1,6 @@
 <div>
 	<h1 class="text-lg font-semibold">Kriyāvat Labs</h1>
+	<p class="text-sm text-neutral-500">/'kriː.jɑː.vʌt/ - Sanskrit word for "to create"</p>
 	<div class="pt-10">
 		<p class="font-semibold">We build apps.</p>
 		<div>
