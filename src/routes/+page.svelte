@@ -1,3 +1,7 @@
+<svelte:head>
+	<title>Kriyāvat Labs</title>
+</svelte:head>
+
 <div>
 	<h1 class="text-lg font-semibold">Kriyāvat Labs</h1>
 	<p class="text-sm text-neutral-500">/'kriː.jɑː.vʌt/ - Sanskrit word for "to create"</p>
