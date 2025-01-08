@@ -1,63 +1,61 @@
-<script lang="ts">
-	import { onMount } from 'svelte';
-	import gsap from 'gsap';
-	import ScrollTrigger from 'gsap/ScrollTrigger';
-	import SplitType from 'split-type';
+<div>
+	<h1 class="text-lg font-semibold">Kriyāvat Labs</h1>
+	<div class="pt-10">
+		<p class="font-semibold">We build apps.</p>
+		<div>
+			We're just team of tech bros who love to build stuff. <br />Currently comprised of
+			<a href="https://x.com/sudorohan" class="rounded-md bg-gray-200 p-1 font-medium">Rohan</a>
+			and
+			<a href="http://shivamtrivedi.com/" class="rounded-md bg-gray-200 p-1 font-medium">Shivam</a>
+		</div>
+		<div class="mt-5">
+			<p class="font-semibold">Why Kriyāvat Labs?</p>
+			<p>
+				Simple - we want a place to showcase our apps and space where we build stuff we find
+				interesting and also allow others to share their idea and build together.
+			</p>
+			<a href="/goal" class="mt-2 inline-flex items-center gap-0 font-semibold hover:underline">
+				our goal
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="16"
+					height="16"
+					viewBox="0 0 24 24"
+					fill="none"
+					stroke="currentColor"
+					stroke-width="2"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					class="h-4 w-4"
+				>
+					<path d="M7 17L17 7" />
+					<path d="M7 7h10v10" />
+				</svg>
+			</a>
+		</div>
 
-	onMount(() => {
-		gsap.registerPlugin(ScrollTrigger);
-
-		const texts = document.querySelectorAll('.animate-text') as NodeListOf<HTMLElement>;
-		texts.forEach((text) => {
-			new SplitType(text, { types: 'words' });
-
-			text.querySelectorAll('.word').forEach((word) => {
-				const wrapper = document.createElement('div');
-				wrapper.style.overflow = 'hidden';
-				wrapper.style.display = 'inline-block';
-				if (word.parentNode) {
-					word.parentNode.insertBefore(wrapper, word);
-					wrapper.appendChild(word);
-				}
-			});
-
-			// Animate each word
-			gsap.from(text.querySelectorAll('.word'), {
-				scrollTrigger: {
-					trigger: text,
-					start: 'top 80%',
-					toggleActions: 'play none none none'
-				},
-				duration: 0.8,
-				y: 100,
-				opacity: 0,
-				stagger: 0.02,
-				ease: 'power3.out'
-			});
-		});
-	});
-</script>
-
-<div class="p-8 text-black">
-	<h1 class="animate-text text-3xl font-medium">Welcome to Kriyāvat Labs</h1>
-	<p class="animate-text mt-10 text-4xl font-medium leading-relaxed">
-		We are just team of tech bros who are tired of “building the next thing” and “disrupting the
-		industry” yapping. Just pure - unadulterated love for building stuff and code. We build and ship
-		projects, because, well, that's what we love. No startup ambitions. Just solid side projects.
-	</p>
-	<p class="animate-text mt-10 text-4xl font-medium leading-relaxed">
-		Why? We are just starting out now, cooking up our first project. So why Kriyāvat Labs?
-		<br /> Simple - we want a place to showcase our projects and space where we build things we find
-		interesting and share them with others who might find them useful.
-		<br />
-		And maybe, just maybe, create something that makes someone out there go “Huh, that's pretty sick.”
-		No big promises. Just projects fuelled by caffeine, curiosity, and some Rock music. And our favourite
-		phrase is “just another side project”
-	</p>
+		<div class="mt-10">
+			<p class="font-semibold">Apps</p>
+			<p class="mt-2 text-neutral-500">In progress</p>
+			<ul class="list-inside list-disc">
+				<li>
+					<a href="https://karyalay.kriyavatlabs.xyz" class="font-semibold hover:underline"
+						>Karyalay</a
+					> - Portfolio tool for everyone to showcase your work effortlessly and get noticed.
+				</li>
+			</ul>
+			<p class="mt-5 text-neutral-500">Live</p>
+			<ul class="list-inside list-disc">
+				<li>
+					<a href="https://giga-resources.vercel.app/" class="font-semibold hover:underline"
+						>Gigaresources</a
+					> - Manually curated collection of resources for devs, designers, and other creative folks.
+				</li>
+				<li>
+					<a href="https://learnn.cc/" class="font-semibold hover:underline">Learnn.cc</a> - One place
+					to learn anything
+				</li>
+			</ul>
+		</div>
+	</div>
 </div>
-
-<style>
-	/* p {
-		mix-blend-mode: multiply;
-	} */
-</style>

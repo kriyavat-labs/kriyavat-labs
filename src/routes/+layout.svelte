@@ -2,8 +2,8 @@
 	import '../app.css';
 </script>
 
-<div class="min-h-screen bg-[#C8E9A0] font-inter antialiased">
-	<main class="mx-auto max-w-4xl pt-44">
+<div class="min-h-screen bg-[#fdfffa] font-inter antialiased">
+	<main class="max-w-4xl px-10 pt-20">
 		<slot />
 	</main>
 </div>
