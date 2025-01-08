@@ -11,7 +11,10 @@
 			We're just team of tech bros who love to build stuff. <br />Currently comprised of
 			<a href="https://x.com/sudorohan" class="rounded-md bg-gray-200 p-1 font-medium">Rohan</a>
 			and
-			<a href="http://shivamtrivedi.com/" class="rounded-md bg-gray-200 p-1 font-medium">Shivam</a>
+			<a
+				href="https://www.linkedin.com/in/shivam-trivedi-ui/"
+				class="rounded-md bg-gray-200 p-1 font-medium">Shivam</a
+			>
 		</div>
 		<div class="mt-5">
 			<p class="font-semibold">Why Kriyāvat Labs?</p>
